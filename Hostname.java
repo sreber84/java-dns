@@ -3,7 +3,8 @@ import java.net.UnknownHostException;
 
 public class Hostname {
    public static void main(String[]args) throws UnknownHostException{
-        InetAddress address = InetAddress.getByName("www.redhat.com");
+        String dnsHostname = System.getenv("DNSHOSTNAME");
+        InetAddress address = InetAddress.getByName(dnsHostname);
 
         System.out.println("my local machine: " + address);
     }
