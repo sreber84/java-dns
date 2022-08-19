@@ -4,7 +4,7 @@ RUN dnf install -y java-17-openjdk-devel java-17-openjdk-headless
 
 WORKDIR /
 
-COPY Hostname.java
+COPY Hostname.java /
 COPY dnslookup /
 
 RUN javac /Hostname.java
