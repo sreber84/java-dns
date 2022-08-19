@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Running name resolution every second against ${DNSHOSTNAME}
+echo "Running name resolution every second against ${DNSHOSTNAME}"
 
 while true; do java Hostname; done;
