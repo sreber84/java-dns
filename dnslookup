@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Running name resolution every second against ${DNSHOSTNAME}"
+echo name resolutions against ${DNSHOSTNAME:=www.google.com} every ${TIMEOUT:=1} sec
 
-while true; do java Hostname; sleep 1; done;
+while true; do java Hostname; sleep ${TIMEOUT}; done;
