@@ -2,4 +2,4 @@
 
 echo "Running name resolution every second against ${DNSHOSTNAME}"
 
-while true; do java Hostname; done;
+while true; do java Hostname; sleep 1; done;
