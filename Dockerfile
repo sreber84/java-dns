@@ -1,6 +1,6 @@
 FROM registry.fedoraproject.org/fedora:latest
 
-RUN dnf install -y java-17-openjdk-devel java-17-openjdk-headless
+RUN dnf install -y java-21-openjdk-devel java-21-openjdk-headless
 
 WORKDIR /
 
